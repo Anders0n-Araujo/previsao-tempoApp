@@ -88,7 +88,30 @@ search.addEventListener('click', () => {
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}km/h`;
+
+            const infoWeather = document.querySelector('.info-weather');
+            const infoHumidity = document.querySelector('.info-humidity');
+            const infoWind = document.querySelector('.info-wind');
+
+            const elCloneinfoWeather = infoWeather.cloneNode(true);
+            const elCloneinfoHumidity = infoHumidity.cloneNode(true);
+            const elCloneinfoWind = infoWind.cloneNode(true);
+
+            elCloneinfoWeather.id = 'clone-info-weather';
+            elCloneinfoWeather.classList.add('active-clone');
+
+            elCloneinfoHumidity.id = 'clone-info-Humidity';
+            elCloneinfoHumidity.classList.add('active-clone');
+
+            elCloneinfoWind.id = 'clone-info-wind';
+            elCloneinfoWind.classList.add('active-clone');
+
+            setTimeout(() =>{
+                infoWeather.insertAdjacentElement("afterend",elCloneinfoWeather);
+                infoHumidity.insertAdjacentElement("afterend",elCloneinfoHumidity);
+                infoWind.insertAdjacentElement("afterend",elCloneinfoWind);
+            }, 2000);
         }    
 
-    })
+    });
 });
