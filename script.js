@@ -85,7 +85,7 @@ search.addEventListener('click', () => {
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}km/h`;
 
-            const infoWeather = document.querySelector('.info-weather');
+            /*const infoWeather = document.querySelector('.info-weather');
             const infoHumidity = document.querySelector('.info-humidity');
             const infoWind = document.querySelector('.info-wind');
 
@@ -102,13 +102,13 @@ search.addEventListener('click', () => {
             elCloneInfoWind.id = 'clone-info-wind';
             elCloneInfoWind.classList.add('active-clone');
 
-            /*setTimeout(() =>{
+            setTimeout(() =>{
                 infoWeather.insertAdjacentElement("afterend",elCloneInfoWeather);
                 infoHumidity.insertAdjacentElement("afterend",elCloneInfoHumidity);
                 infoWind.insertAdjacentElement("afterend",elCloneInfoWind);
-            }, 2000);
+            }, 2200);
 
-            const cloneInfoWeather = document.querySelectorAll(".info-weather.active-clone");
+            const cloneInfoWeather = document.querySelectorAll('.info-weather.active-clone');
             const totalCloneInfoWeather = cloneInfoWeather.length;
             const cloneInfoWeatherFirst = cloneInfoWeather[0];
 
@@ -118,6 +118,10 @@ search.addEventListener('click', () => {
             const cloneInfoWind = document.querySelectorAll(".info-wind.active-clone");
             const cloneInfoWindFirst = cloneInfoWind[0];
 
+            console.log(cloneInfoWeather);
+            console.log(cloneInfoHumidity);
+            console.log(cloneInfoWind);
+            console.log(totalCloneInfoWeather)
             if(totalCloneInfoWeather > 0){
                 cloneInfoWeatherFirst.classList.remove('active.clone');
                 cloneInfoHumidityFirst.classList.remove('active.clone');
@@ -128,6 +132,10 @@ search.addEventListener('click', () => {
                     cloneInfoWeatherFirst.remove();
                     cloneInfoWeatherFirst.remove();
                 }, 2200);
+
+                console.log(cloneInfoWeatherFirst);
+                console.log(cloneInfoHumidityFirst);
+                console.log(cloneInfoWindFirst);
             }*/
         }    
 

@@ -111,7 +111,7 @@ body{
 .weather-box,
 .weather-datails{
   visibility: hidden;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .weather-box.active,
@@ -237,7 +237,7 @@ body{
 }
 
 .weather-box:not(.active) #clone-info-weather .weather{
-  opacity: 0;
+  opacity: 100;
   transition-delay: 0s;
 }
 
@@ -255,5 +255,5 @@ body{
 .active-clone#clone-info-wind span{
   transform: translateY(0%);
 
-}/*
+}
 
