@@ -85,7 +85,7 @@ search.addEventListener('click', () => {
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}km/h`;
 
-            /*const infoWeather = document.querySelector('.info-weather');
+            const infoWeather = document.querySelector('.info-weather');
             const infoHumidity = document.querySelector('.info-humidity');
             const infoWind = document.querySelector('.info-wind');
 
@@ -118,10 +118,6 @@ search.addEventListener('click', () => {
             const cloneInfoWind = document.querySelectorAll(".info-wind.active-clone");
             const cloneInfoWindFirst = cloneInfoWind[0];
 
-            console.log(cloneInfoWeather);
-            console.log(cloneInfoHumidity);
-            console.log(cloneInfoWind);
-            console.log(totalCloneInfoWeather)
             if(totalCloneInfoWeather > 0){
                 cloneInfoWeatherFirst.classList.remove('active.clone');
                 cloneInfoHumidityFirst.classList.remove('active.clone');
@@ -129,14 +125,14 @@ search.addEventListener('click', () => {
 
                 setTimeout(() =>{
                     cloneInfoWeatherFirst.remove();
-                    cloneInfoWeatherFirst.remove();
-                    cloneInfoWeatherFirst.remove();
+                    cloneInfoHumidityFirst.remove();
+                    cloneInfoWindFirst.remove();
                 }, 2200);
 
                 console.log(cloneInfoWeatherFirst);
                 console.log(cloneInfoHumidityFirst);
                 console.log(cloneInfoWindFirst);
-            }*/
+            }
         }    
 
     });

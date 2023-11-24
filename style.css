@@ -223,8 +223,8 @@ body{
   display: none;
 }
 
-/*#clone-info-weather,
-#clone-info-humidity,
+#clone-info-weather,
+#clone-info-Humidity,
 #clone-info-wind{
   position: absolute;
   transform: translateY(-100%);
@@ -245,13 +245,13 @@ body{
   transform: translateY(0%);
 }
 
-#clone-info-humidity span,
+#clone-info-Humidity span,
 #clone-info-wind span{
   transform: translateY(100%);
   transition: transform 1s ease;
 }
 
-.active-clone#clone-info-humidity span,
+.active-clone#clone-info-Humidity span,
 .active-clone#clone-info-wind span{
   transform: translateY(0%);
 
