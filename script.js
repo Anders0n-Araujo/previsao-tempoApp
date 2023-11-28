@@ -127,7 +127,7 @@ search.addEventListener('click', () => {
                     cloneInfoWeatherFirst.remove();
                     cloneInfoHumidityFirst.remove();
                     cloneInfoWindFirst.remove();
-                }, 2200);
+                }, 100);
 
                 console.log(cloneInfoWeatherFirst);
                 console.log(cloneInfoHumidityFirst);
